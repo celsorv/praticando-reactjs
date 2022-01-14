@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+    <script type="text/babel">
+
+        const MyComponent = React.createClass({
+            render: () => <h1><span>Hello World</span></h1>
+        })
+
+        const MyAnotherComponent = React.createClass({
+            render: () => (
+                <div>
+                    <h1>ReactJS</h1>
+                    <span>Welcome to class!</span>
+                </div>
+            )
+        })
+
+        ReactDOM.render(
+            <div>
+                <MyComponent />
+                <MyAnotherComponent />
+            </div>
+            , document.getElementById('app')
+        )
+
+    </script>
+</body>
+
+</html>
